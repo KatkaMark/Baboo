@@ -1,0 +1,749 @@
+/* settings for whole document */
+*, :after, :before { box-sizing: border-box; }
+
+/* #6fa6dd */
+
+:root {
+    --background--light--blue: rgb(191, 222, 253);
+    --background--dark--blue: #acd0f2;
+    --background--nav: #2f9cd3;
+    --background--nav--active: #045178;
+    --background--divider: #5fa0d0;
+
+    --text--color--main: #045178;
+    --text--color--heading: #006699;
+
+    --text--color--nav: white;
+    --text--color--anchor--normal: #3983e4;
+}
+
+
+body {
+    background-color: var(--background--light--blue);
+    color: var(--text--color--main);
+    font-size: 14px;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 0;
+}
+
+
+
+
+/* ================================================================ */
+/* -------------------------MOBIL VERSION-------------------------- */
+/* ================================================================ */
+
+
+
+
+
+/* -------------------HEADER------------------- */
+
+
+.header {
+    /* adding background image */
+    background-color: var(--background--light--blue);
+    background-image: url(images/Header_Top_01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 40px 15px 20px 15px;
+    
+    position: relative;
+}
+
+
+.header__heading__image {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+
+   
+}
+
+/* ---------------------- LANGUAGES ------------------------ */
+
+
+.language {
+    display: flex;
+    align-items: flex-start;
+
+    position: absolute;
+    top: 0%;
+    right: 15px;
+
+    cursor: pointer;
+   
+
+}
+
+.language__anchor {
+    color: var(--text--color--main);
+    text-decoration: none;
+}
+
+.language__anchor:visited {
+    color: var(--text--color--main);
+
+}
+
+
+
+.language--off {
+    background-color: var(--background--divider);
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    padding: 7px 2px 2px 2px;
+    /* box-shadow: 0 4px 3px 0px var(--background--nav--active); */
+
+    flex: 0 0 50%;
+ 
+}
+
+.language--on {
+    background-color: var(--background--light--blue);
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    padding: 15px 2px 2px 2px;
+    /* box-shadow: 0 4px 3px 0px var(--background--nav--active); */
+     
+    flex: 0 0 50%;
+  
+    
+    
+}
+
+
+
+
+
+
+/* -----------------------NAVIGATION------------------- */
+
+
+.navigation {
+    background-color: var(--background--nav);
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__anchor {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text--color--nav);
+    display: block;
+    padding: 10px 0;
+    margin: 0 15px;
+    border-bottom: 1px solid var(--text--color--nav);
+}
+
+.navigation__anchor:hover,
+.navigation__anchor:active,
+.navigation__anchor:focus {
+    background-color: var(--background--nav--active);
+}
+
+
+
+
+
+
+
+/* ------------------- CONTENT ---------------------- */
+
+p {
+    padding: 0 10px;
+}
+
+.article__heading {
+    color: var(--text--color--heading);
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+
+    padding: 20px 10px 0px 10px;
+}
+
+.photo {
+    max-width: 100%;
+}
+
+.article a, 
+.quotes a {
+    color: var(--text--color--anchor--normal);
+}
+
+
+
+.divider {
+    background-image: url("images/Line_01b.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--background--divider);
+    padding: 20px 15%;
+    margin: 40px 0 0 0;
+}
+
+.divider--english {
+    background-image: url("images/Line_01_EN.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--background--divider);
+    padding: 20px 15%;
+    margin: 40px 0 0 0;
+}
+
+
+
+/* -------settings for book section--------------- */
+
+.article__p__third--book  ul{
+    padding: 0 0 0 25px;
+}
+
+.book__video {
+    margin-top: 20px;   
+}
+
+.book__video p {
+    margin-bottom: 0;
+}
+
+.book__video--video {
+    max-width: 100%;
+}
+
+.book__audio {
+    display: inline;
+    text-align: center;
+}
+
+.book__audio--audio {
+    max-width: 100%;
+    border-radius: 25px;
+    box-shadow: 9px 7px 20px -2px rgba(0,0,0,0.64);
+    outline: none;
+}
+
+.book__audio--audio:focus {
+    border: 2px solid var(--background--nav--active);
+    box-shadow: 3px 3px 2px -1px rgba(0,0,0,0.64);
+}
+
+.article__book {
+    display: flex;
+    flex-direction: column;
+}
+
+.article__heading__book {
+    order: -3;
+}
+
+.article__p__first--book {
+    order: -2;
+}
+
+.photo__book {
+    order: -1;
+}
+
+
+/* -------settings for author and ilustrator section--------------- */
+
+
+.article__author,
+.article__ilustrator {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.article__heading__author,
+.article__heading__ilustrator {
+    order: -3;
+}
+
+.article__p__first--author,
+.article__p__first--ilustrator {
+    order: -2;
+}
+
+.photo__author,
+.photo__ilustrator {
+    order: -1;   
+}
+
+
+.article__ilustrator {
+    background-color: var(--background--dark--blue);
+    
+    
+}
+
+
+/* -------settings for music section--------------- */
+
+.article__music {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.article__heading__music {
+    order: -4;
+}
+
+.article__p__first--music {
+    order: -3;
+}
+
+.article__p__second--music {
+    order: -2;
+}
+
+.photo__music {
+    order: -1;
+}
+
+
+
+
+
+
+/* ---------------- settings for quotes section---------- */
+
+
+.quotes__item {
+    margin: 0;
+    padding: 20px 20px 20px 30px;
+    position: relative;
+}
+
+.quotes__item__inside {
+    margin: 0;
+}
+
+.quotes__item__inside p {
+    padding-left: 0;
+}
+
+.quotes__item__inside p:last-of-type {
+    margin-bottom: 0;
+}
+
+.quotes__item--even {
+    background-color: var(--background--dark--blue);
+}
+
+
+.quotes__item__inside::before {
+    content: '\201C';
+    margin-right: 2px;
+    margin-left: -4px;
+
+    display: inline-block;
+    font-size: 40px;
+    opacity: .5;
+    position: absolute;
+    top: 0px;
+    left: 15px; 
+}
+
+.quotes__item__inside::after {
+    content: ' ';
+    margin-left: 4px;
+    margin-right: -2px;
+}
+
+
+.quotes__item__by {
+    padding: 15px 0 5px 0;
+    font-weight: bold;
+    text-align: right;
+}
+
+.quotes__item__by::before {
+    content: "-- ";
+}
+
+
+
+
+
+
+
+/* ------------------- FOOTER ---------------------- */
+
+.footer {
+    background-color: var(--background--divider);
+    text-align: center;
+    padding: 5px 0;
+         
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* ================================================================ */
+/* -------------------------MOBIL VERSION - extra large-------------------- */
+/* ================================================================ */
+
+
+@media screen and (min-width: 380px) {
+
+    .photo {
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 0 25px 0 25px;
+    }
+
+    .photo__book--image {
+        border-radius: 5px;
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+/* ================================================================ */
+/* -------------------------TABLET VERSION-------------------------- */
+/* ================================================================ */
+
+
+
+
+@media screen and (min-width: 500px) {
+
+    body {
+        font-size: 14px;
+    }
+
+
+    /*  --------------- changes for languages -------------- */
+
+
+
+    .language--off {
+        background-color: var(--background--divider);
+        font-size: 12px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px 4px 4px 4px;
+
+    }
+
+    .language--on {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding: 20px 4px 4px 4px;
+    }
+
+    /* ---------changes for navigation--------------- */
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .navigation__anchor {
+        width: 100%;
+    }
+
+
+
+    .photo__book {
+        border-radius: 0;
+        transform: rotate(10deg);
+    }
+
+
+
+    .divider {
+        background-size: contain;
+        padding: 35px;
+    }
+    .divider--english {
+        background-size: contain;
+        padding: 35px;
+    }
+
+    /*-------settings for floating pic in content part---------- */
+
+
+    .article {
+        display: block;
+        padding: 32px 20px;
+        overflow: auto;
+    } 
+
+  
+
+    .article__heading {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .photo__author,
+    .photo__music {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;  
+    }
+
+    
+    .photo__ilustrator {
+        float: right;
+        margin-left: 20px;
+    }
+
+        
+    .photo__book {
+        float: right;
+        margin: 20px 0 20px 20px;
+    }
+
+
+    .photo__book--image {
+        width: 80%;
+        display: block;
+    }
+
+    .book__video__trailer {
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+
+    .article__p__third--book {
+        clear: right;
+    }
+
+    .article__p__forth--book {
+        clear: both;
+    }
+
+    .book__video_supporters {
+        text-align: center;
+    }
+
+
+
+
+    /* ---------------- settings for quotes section---------- */
+
+    .quotes__heading {
+        padding-top: 32px;
+        padding-left: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+/* ================================================================ */
+/* ----------------------------PC VERSION-------------------------- */
+/* ================================================================ */
+
+
+
+@media screen and (min-width: 1001px) {
+
+    body {
+        font-size: 16px;
+    }
+
+
+
+
+    .language {
+        right: 60px;
+    }
+
+    .language--off {
+        background-color: var(--background--divider);
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        padding: 15px 4px 4px 4px;
+
+    }
+
+    .language--on {
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        padding: 25px 4px 4px 4px;
+    }
+
+
+
+
+
+    .article {
+        display: block;
+        padding: 32px 40px;
+        overflow: auto;
+    }
+    
+    .article__heading {
+        font-size: 175%;;
+    }
+
+    .article__heading__music--small {
+        font-size: 140%;
+    }
+
+
+
+    .photo__author,
+    .photo__music {
+        margin-right: 30px;
+        margin-bottom: 14px;
+    }
+
+    .photo__ilustrator {
+        margin-left: 30px;
+    }
+
+
+
+
+
+    /* ---------------- settings for quotes section---------- */
+
+    .quotes__heading {
+        padding-top: 32px;
+        padding-left: 40px;
+    }
+
+    .quotes__item {
+        margin: 0;
+        padding: 50px 70px;
+    }
+
+    .quotes {
+        position: relative;
+    }
+
+    .quotes__item__inside::before {
+        top: 30px;
+        left: 55px;
+    }
+
+
+
+
+
+    /* --- even quotes to put align right --- */
+    .quotes__item:nth-of-type(even) .quotes__item__inside {
+        width: 80%;
+        margin: 0 0 0 auto;     
+    }
+
+    .quotes__item:nth-of-type(even) .quotes__item__inside::before {
+        top: 30px;
+        left: 22%;  
+    }
+
+
+
+
+    /* --- even quotes__by to put "--" after and align right 
+    odd quotes_by to align left --- */
+    .quotes__item:nth-of-type(even) .quotes__item__by {
+        width: 80%;
+        margin: 0 0 0 auto;   
+    }
+   
+    .quotes__item:nth-of-type(even) .quotes__item__by::before {
+        content: none;
+    }
+
+    .quotes__item:nth-of-type(even) .quotes__item__by::after {
+        content: " --";
+    }
+
+
+    .quotes__item:nth-of-type(odd) .quotes__item__by {
+        text-align: left;
+    }
+
+}
+
+
+
+/* ================================================================ */
+/* -------------------------PC VERSION - WIDE------------------------ */
+/* ================================================================ */
+
+
+
+@media screen and (min-width: 1300px) {
+
+    body {
+        background-color: #d6eaff;
+    }
+
+   .main {
+       width: 1001px;
+       margin: 30px auto;
+       box-shadow: 0px 0px 5px 1px hsla(205, 55%, 59%, 0.4);
+       background-color: var(--background--light--blue);
+   }  
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
