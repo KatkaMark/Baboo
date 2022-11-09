@@ -4,17 +4,17 @@
 /* #6fa6dd */
 
 :root {
-    --background--light--blue: rgb(191, 222, 253);
-    --background--dark--blue: #acd0f2;
-    --background--nav: #2f9cd3;
-    --background--nav--active: #045178;
-    --background--divider: #5fa0d0;
+    --background--light--blue: rgb(206, 220, 195);;
+    --background--dark--blue: rgb(189, 202, 179);
+    --background--nav: #7b906a;
+    --background--nav--active: #617054;
+    --background--divider: #7b906a;
 
-    --text--color--main: #045178;
-    --text--color--heading: #006699;
+    --text--color--main: #262c26;
+    --text--color--heading: #262c26;
 
     --text--color--nav: white;
-    --text--color--anchor--normal: #3983e4;
+    --text--color--anchor--normal: #262c26;
 }
 
 
