@@ -4,8 +4,8 @@
 /* #6fa6dd */
 
 :root {
-    --background--light--blue: rgb(206, 220, 195);;
-    --background--dark--blue: rgb(189, 202, 179);
+    --background--light--blue: rgb(255, 255, 255);;
+    --background--dark--blue: rgb(227, 235, 221);
     --background--nav: #7b906a;
     --background--nav--active: #617054;
     --background--divider: #7b906a;
@@ -722,6 +722,7 @@ p {
 
     body {
         background-color: #d6eaff;
+        background-color: #cedcc3;
     }
 
    .main {
