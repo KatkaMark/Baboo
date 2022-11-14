@@ -261,6 +261,19 @@ p {
 }
 
 
+.slunebabooimg {
+    display: flex;
+    
+}
+
+.photo__book2 {
+    order: -1;
+    padding: 0px;
+}
+
+
+
+
 /* -------settings for author and ilustrator section--------------- */
 
 
@@ -484,7 +497,7 @@ p {
 
     .photo__book {
         border-radius: 0;
-        transform: rotate(10deg);
+      
     }
 
 
