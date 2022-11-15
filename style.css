@@ -187,14 +187,20 @@ p {
 
 
 .divider {
-    background-image: url("images/Line_01b.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    color: white;
+    text-align: center;
+    font-size: 20px;
     background-color: var(--background--divider);
-    padding: 20px 15%;
-    margin: 40px 0 0 0;
+    padding: 10px ;
+    
 }
+
+.divider__text {
+    padding: 0;
+    margin: 0;
+}
+
+
 
 .divider--english {
     background-image: url("images/Line_01_EN.png");
@@ -263,13 +269,21 @@ p {
 
 .slunebabooimg {
     display: flex;
+  width: 100%;
     
 }
 
 .photo__book2 {
     order: -1;
     padding: 0px;
+    flex-basis: 30%;
+    min-width: 200px;
 }
+
+.article__p__third--book {
+    flex-basis: 70%;
+}
+
 
 
 
@@ -444,6 +458,20 @@ p {
 }
 
 
+@media screen and (max-width: 700px) {
+
+  
+
+
+    .slunebabooimg {
+    flex-direction: column-reverse;
+        
+    }
+    
+
+}
+
+
 
 
 
@@ -502,14 +530,7 @@ p {
 
 
 
-    .divider {
-        background-size: contain;
-        padding: 35px;
-    }
-    .divider--english {
-        background-size: contain;
-        padding: 35px;
-    }
+ 
 
     /*-------settings for floating pic in content part---------- */
 
